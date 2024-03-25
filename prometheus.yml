@@ -16,7 +16,7 @@ scrape_configs:
 
   - job_name: "tesla-cloudflare"
     static_configs:
-      - targets: ["https://hunky-volcano-production.up.railway.app"]
+      - targets: ["hunky-volcano-production.up.railway.app"]
 
 remote_write:
 - url: https://prometheus-prod-13-prod-us-east-0.grafana.net/api/prom/push
