@@ -23,3 +23,9 @@ remote_write:
   basic_auth:
     username: 1252541
     password: glc_eyJvIjoiOTczOTcwIiwibiI6InN0YWNrLTc3MjMyMC1obS13cml0ZS10ZXNsYSIsImsiOiI0N3E2WHlwc1QwRzBJdXk3MUloMG9lOTgiLCJtIjp7InIiOiJwcm9kLXVzLWVhc3QtMCJ9fQ==
+  queue_config:
+    max_samples_per_send: 1000 # Increase to send more samples per request
+    max_shards: 10 # Adjust based on your throughput needs
+    capacity: 5000 # Increase the queue capacity
+    min_backoff: 2s # Adjust backoff times to reduce pressure on the endpoint
+    max_backoff: 30s
